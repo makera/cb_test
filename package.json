@@ -1,0 +1,44 @@
+{
+  "name": "cb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start --single-run",
+    "start": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production",
+    "lint": "eslint --cache --format codeframe --ext mjs,jsx,js src test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^4.5.1",
+    "@material-ui/icons": "^4.5.1",
+    "@material-ui/styles": "^4.5.0",
+    "autoprefixer": "^9.6.5",
+    "babel-plugin-react-css-modules": "^5.2.6",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-scss": "^2.0.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-hot-loader": "^4.12.15",
+    "sass-loader": "^8.0.0"
+  },
+  "devDependencies": {
+    "@neutrinojs/airbnb": "9.0.0-rc.4",
+    "@neutrinojs/karma": "^9.0.0-rc.4",
+    "@neutrinojs/react": "^9.0.0-rc.4",
+    "eslint": "^6.5.1",
+    "eslint-config-prettier": "^6.4.0",
+    "karma": "^4.4.0",
+    "karma-cli": "^2.0.0",
+    "mocha": "^6.2.1",
+    "neutrino": "^9.0.0-rc.4",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
+  }
+}

@@ -1,0 +1,52 @@
+.json {
+  white-space: pre;
+  font-family: monospace;
+  margin: 20px 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0 0 0 20px;
+  position: relative;
+}
+
+ul .list::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -25px;
+  bottom: 15px;
+  width: 1px;
+  left: 0;
+  background-color: #000;
+}
+
+.list > li {
+  margin: 10px 0;
+  position: relative;
+  /* box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5); */
+}
+
+.list > li .list > li::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 15px;
+  left: -20px;
+  width: 20px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.name {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.rotate {
+  margin-left: 10px;
+}
+
+.rotate.active {
+  transform: rotate(-180deg);
+}
